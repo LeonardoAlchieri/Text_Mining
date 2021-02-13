@@ -1,0 +1,48 @@
+main:
+  data_to_use: "scraping_data_NYTimes.json"
+  dataset_folder: "./datasets"
+  language: "english"
+  output_folder: "./outputsNY"
+  num_eval: 4
+  name: "NyTimes"
+  vis_folder: "./visualizationsNY"
+  color_vis:
+    - "#782113"
+    - "#A54040"
+    - "#F28E4C"
+    - "#F7BB48"
+    - "#C3BF50"
+    - "#439F7E"
+
+nytimes_cannon:
+  time_button_pressed: 2
+  sleep_time: 5
+  filename: "NYTimes_politics_cannon_test"
+  search_url_first_part: "https://www.nytimes.com/search?dropmab=false&endDate="
+  end_date: 2020-08-27
+  # start_date: 20200401
+  start_date: 20200825
+  search_url_second_part: "&query=&sections=U.S.%7Cnyt%3A%2F%2Fsection%2Fa34d3d6c-c77f-5931-b951-241b4e28681c&sort=newest&startDate="
+  search_url_third_part: "&types=article"
+  remote: False
+
+
+# main:
+#   data_to_use: "xsum.json"
+#   dataset_folder: "./datasets"
+#   language: "english"
+#   output_folder: "./outputsXSUM"
+#   num_eval: 4
+#   name: "XSum"
+#   vis_folder: "./visualizationsXSUM"
+#   color_vis:
+#     - "#782113"
+#     - "#A54040"
+#     - "#F28E4C"
+#     - "#F7BB48"
+#     - "#C3BF50"
+#     - "#439F7E"
+
+xsum:
+  input_dir: "./datasets/XSUM_DATA"
+  output_dir: "./datasets"
