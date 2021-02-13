@@ -8,6 +8,7 @@ See below for more information as how to install and run everything.
 In this project 2 main datasets are used:
 - NYTimes data, obtained using an automated scraper (purpose built).
 - A subset (~10%) of the XSum dataset, obtained as detailed by the researchers (see https://github.com/EdinburghNLP/XSum)
+
 Both datasets have around 10'000 articles, but the first has larger articles than the second one.
 
 Any other dataset can be used with the following code, given its preparation as follow:
