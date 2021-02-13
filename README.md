@@ -41,6 +41,12 @@ The following order is the one used to run all of the project.
 3. Run `python3 visualizations.py` to create visualizations from the evaluation results. This will be saved as pdf file in the corresponding visualization folders.
 4. Run `python3 manual_evaluation.py` to randomly sample some summaries and manually compare the real one to the different generated ones. CMD inputs will be required to give human scores to each summary. The files will be saved to the configured output folder as a json file.
 
+# WARNINGS
+There are 2 scripts, namely `scraping\NYTimes_scraping.py` and `prepare_xsum.py`, that have been used to scrape the data and clean up the data from XSum, respectively. Since they are technically not part of the project, where the data is considered given "as is", please do not run them.
+In particular, the former script is very time consuming, with the whole scraping processes taking well over a few hours and using a virtual machine.
+
+For more information on this regard, please contact me and I shall give more details.
+
 -------
 If some problems arise during the execution of any of the above steps, please do not hesitate to contact me.
 All of the scripts have been successfully tested on `MacOS 11.1`.
