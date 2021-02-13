@@ -1,10 +1,11 @@
-# Json to load dataset
+# General Purpose
 import json
 from yaml import safe_load
 import pandas as pd
+import numpy as np
 import re
+import progressbar
 # Extractive
-from nltk.tokenize import WordPunctTokenizer, PunktSentenceTokenizer
 from sumy.parsers.plaintext import PlaintextParser
 from sumy.nlp.tokenizers import Tokenizer
 from sumy.nlp.stemmers import Stemmer
@@ -16,18 +17,15 @@ from sumy.summarizers.random import RandomSummarizer
 from sumy.summarizers.kl import KLSummarizer
 from sumy.summarizers.reduction import ReductionSummarizer
 from sumy.utils import get_stop_words
-
 from sumy.evaluation.rouge import (rouge_1, rouge_2,
                                    rouge_l_sentence_level,
                                    rouge_l_summary_level, rouge_n)
 from sumy.models.dom._sentence import Sentence
 
-import numpy as np
-
+from nltk.tokenize import WordPunctTokenizer, PunktSentenceTokenizer
 import nltk
 from nltk.corpus import stopwords
 
-import progressbar
 
 def load_clean_data(path_to_file=None):
     print("[INFO] Loading json data from", path_to_file)
