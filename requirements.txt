@@ -1,0 +1,7 @@
+pyyaml
+pandas
+nltk
+sumy
+numpy
+progressbar2
+matplotlib
