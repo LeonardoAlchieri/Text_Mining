@@ -18,7 +18,7 @@ Any other dataset can be used with the following code, given its preparation as 
 
 # REQUIREMENTS & INSTALLATION
 
-The scripts have been tested on `python 3.7`, `python 3.8` and `python3.9`. It has not been tested no less recent versions, but it might work on any `3.*` release.
+The scripts have been tested on `python 3.7`, `python 3.8` and `python3.9`. It has not been tested on less recent versions, but it might work on any `3.*` release.
 All of the requirements for the scripts are listed in the file `requirements.txt`.
 Please run `pip install -r requirements.txt` to run everything.
 
