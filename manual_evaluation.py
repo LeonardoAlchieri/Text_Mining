@@ -57,7 +57,10 @@ def main():
                   summaries[col][idx], "»\n")
             while True:
                 print("[INPUT] Give score [1-5]:")
-                score = int(input())
+                try:
+                    score = int(input())
+                except:
+                    score = 0
                 if score > 5 or score < 1:
                     print("[ERROR] Please give number between 1 and 5 (included).")
                     pass

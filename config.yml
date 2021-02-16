@@ -3,7 +3,7 @@ main:
   dataset_folder: "./datasets"
   language: "english"
   output_folder: "./outputsNY"
-  num_eval: 4
+  num_eval: 10
   name: "NyTimes"
   vis_folder: "./visualizationsNY"
   color_vis:
@@ -32,7 +32,7 @@ nytimes_cannon:
 #   dataset_folder: "./datasets"
 #   language: "english"
 #   output_folder: "./outputsXSUM"
-#   num_eval: 4
+#   num_eval: 10
 #   name: "XSum"
 #   vis_folder: "./visualizationsXSUM"
 #   color_vis:
